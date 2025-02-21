@@ -1,5 +1,3 @@
-
-
 #progress-bar {
     position: fixed;
     top: 0;
@@ -11,44 +9,89 @@
     transition: width 0.1s ease-out;
 }
 
-.logopage{
+.logopage {
     width: 80px;
-    border-radius: 80%;
+    border-radius: 50%;
     margin-right: 10px;
 }
 
-.img-section1  img{
+.img-section1 img {
     width: 250px;
-   border-radius: 100%;
+    border-radius: 50%;
 }
 
-a{
+a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: normal;
-    line-height: 10px;
+    line-height: 1.5;
+    text-decoration: none;
+    color: inherit;
 }
 
+/* ----------------- */
+/* ESTILIZAÇÃO DOS CARDS */
+/* ----------------- */
 .card {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+    width: 100%; /* Garante que os cards ocupem o espaço disponível */
+    max-width: 300px; /* Define um tamanho máximo */
+    margin: auto; /* Centraliza os cards */
+}
+
+
+.card:hover {
+    transform: translateY(-5px);
 }
 
 .card-img-top {
     height: 200px;
     object-fit: cover;
+    width: 100%;
 }
 
 .card-body {
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
 }
 
-footer img{
+/* Ajustando tamanho do último card */
+.card:last-child {
+    min-height: 320px; 
+}
+
+/* Ajustando imagens do footer */
+footer img {
     width: 70px;
-    border-radius: 80%;
+    border-radius: 50%;
 }
 
-.btn-smaller{
+/* Botões menores */
+.btn-smaller {
     font-size: 0.875rem;
     padding: 8px 16px;
+}
+
+/* ----------------- */
+/* RESPONSIVIDADE */
+/* ----------------- */
+@media (max-width: 992px) {
+    .img-section1 img {
+        width: 200px;
+    }
+
+    .logopage {
+        width: 60px;
+    }
+
+    .card {
+        min-height: 320px;
+    }
+}
+
+@media (max-width: 768px) {
+    .row.justify-content-center {
+        gap: 1rem; /* Reduz espaçamento entre os cards */
+    }
 }
