@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #progress-bar {
     position: fixed;
     top: 0;
@@ -95,3 +96,107 @@ footer img {
         gap: 1rem; /* Reduz espaçamento entre os cards */
     }
 }
+=======
+#progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 5px;
+    background-color: #007bff;
+    z-index: 1000;
+    transition: width 0.1s ease-out;
+}
+
+.logopage {
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.img-section1 img {
+    width: 250px;
+    border-radius: 50%;
+}
+
+a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    line-height: 1.5;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ----------------- */
+/* ESTILIZAÇÃO SIMPLIFICADA DOS CARDS */
+/* ----------------- */
+.card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    background-color: #f8f9fa; /* Cor de fundo dos cards */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    height: 150px; /* Altura reduzida para as imagens */
+    object-fit: cover;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-body {
+    padding: 15px;
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-size: 0.875rem;
+    color: #6c757d; /* Cor do texto secundário */
+}
+
+/* Ajustando imagens do footer */
+footer img {
+    width: 70px;
+    border-radius: 50%;
+}
+
+/* Botões menores */
+.btn-smaller {
+    font-size: 0.875rem;
+    padding: 8px 16px;
+}
+
+/* ----------------- */
+/* RESPONSIVIDADE */
+/* ----------------- */
+@media (max-width: 992px) {
+    .img-section1 img {
+        width: 200px;
+    }
+
+    .logopage {
+        width: 60px;
+    }
+
+    .card {
+        min-height: auto; /* Remove altura mínima fixa */
+    }
+}
+
+@media (max-width: 768px) {
+    .row.justify-content-center {
+        gap: 1rem; /* Reduz espaçamento entre os cards */
+    }
+}
+>>>>>>> dafdbaa (Atualização do portfólio: ajustes no CSS e novas imagens)
