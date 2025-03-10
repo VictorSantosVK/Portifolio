@@ -1,10 +1,3 @@
-/* Definição global da fonte */
-body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: normal;
-    line-height: 1.5;
-    color: #000; /* Cor padrão do texto */
-}
 
 /* Barra de progresso */
 #progress-bar {
