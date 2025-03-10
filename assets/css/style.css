@@ -1,3 +1,12 @@
+/* Definição global da fonte */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #000; /* Cor padrão do texto */
+}
+
+/* Barra de progresso */
 #progress-bar {
     position: fixed;
     top: 0;
@@ -9,6 +18,7 @@
     transition: width 0.1s ease-out;
 }
 
+/* Imagens */
 .logopage {
     width: 80px;
     border-radius: 50%;
@@ -20,10 +30,8 @@
     border-radius: 50%;
 }
 
+/* Links */
 a {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: normal;
-    line-height: 1.5;
     text-decoration: none;
     color: inherit;
 }
